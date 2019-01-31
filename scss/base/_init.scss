@@ -1,6 +1,8 @@
-/*Uppdaterad 31 jan 2019*/
+/*Uppdaterad till sass 31 jan 2019*/
+
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300,200,900,600);
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
@@ -614,35 +616,67 @@ h2.block-title {
 
 /* Unga och medier
 ===================================================================== */
-.context-clearinghouse .zone-preface-wrapper h1,
-.context-clearinghouse .zone-preface-wrapper h2,
-.context-clearinghouse .zone-preface-wrapper h3,
-.context-clearinghouse .zone-preface-wrapper h4,
-.context-clearinghouse .zone-preface-wrapper h5{
-    color: #c0262c;
+.context-clearinghouse{
+    .zone-preface-wrapper{
+        h1,h2,h3,h4,h5{
+            color: #c0262c;
+        }
+        h2{
+            margin-bottom: 2px;
+            a{
+                color: #c0262c;
+                font-size: 15px !important;
+                line-height: 21px !important;
+                
+            }
+            a:hover{
+                border: none;
+            }
+        }
+        .region-preface-second{
+            a span{
+                font-weight: 700; 
+            }
+            .block-inner{
+                margin-bottom: 15px;
+            }
+            .view-display-id-block_3{
+                .views-row {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }
+//.context-clearinghouse .zone-preface-wrapper h1,
+//.context-clearinghouse .zone-preface-wrapper h2,
+//.context-clearinghouse .zone-preface-wrapper h3,
+//.context-clearinghouse .zone-preface-wrapper h4,
+//.context-clearinghouse .zone-preface-wrapper h5{
+//    color: #c0262c;
+//}
 
-.context-clearinghouse .zone-preface-wrapper h2{
-    margin-bottom: 2px;
-}
-.context-clearinghouse .zone-preface-wrapper h2 a{
-    color: #c0262c;
-    font-size: 15px !important;
-    line-height: 21px !important;
-}
-.context-clearinghouse .zone-preface-wrapper h2 a:hover{
-    border: none;
-}
+//.context-clearinghouse .zone-preface-wrapper h2{
+//    margin-bottom: 2px;
+//}
+//.context-clearinghouse .zone-preface-wrapper h2 a{
+//    color: #c0262c;
+//    font-size: 15px !important;
+//    line-height: 21px !important;
+//}
+//.context-clearinghouse .zone-preface-wrapper h2 a:hover{
+//    border: none;
+//}
 
-.context-clearinghouse .zone-preface-wrapper .region-preface-second a span{
-    font-weight: 700;
-} 
-.context-clearinghouse .zone-preface-wrapper .region-preface-second .block-inner{
-    margin-bottom: 15px;
-}
-.context-clearinghouse .zone-preface-wrapper .region-preface-second .view-display-id-block_3 .views-row {
-    margin-bottom: 15px;
-}
+//.context-clearinghouse .zone-preface-wrapper .region-preface-second a span{
+//    font-weight: 700;
+//} 
+//.context-clearinghouse .zone-preface-wrapper .region-preface-second .block-inner{
+//    margin-bottom: 15px;
+//}
+//.context-clearinghouse .zone-preface-wrapper .region-preface-second .view-display-id-block_3 .views-row {
+//    margin-bottom: 15px;
+//}
 .block-unga-och-medier-startsida-block{
     padding: 0;
     margin: 0;
@@ -2118,51 +2152,100 @@ ul.quicktabs-tabs li.active a{
 }
 /*Publikation och tidskrift full nod
 ===========================================================================================*/
-.context-publikationer  .ds-2col > .group-left{
-    width: 65% !important;
-    padding-right: 8px;
+.context-publikationer, .context-publications{
+    .ds-2col > .group-left{
+        width: 65% !important;
+        padding-right: 8px;
+    }
+    .ds-2col > .group-right{
+        width: 30% !important;
+        padding: 12px 0 12px 12px;
+        background: url('img/dashed-ver.jpg') repeat-y ;
+        font-size: 13px;
+        img{
+            border: 1px solid #dfdfdf;
+        }
+        .field{
+            margin-bottom: 3px;
+            margin-top: 0;
+        }
+    }
+    .field-name-field-bild-1 a:hover{
+        border: 0;
+    }
+    .view-mode-full{
+        h1{
+            margin-bottom: 5px !important;        
+        }
+        .field-name-field-undertitel-1{
+            margin-bottom: 20px;
+        }
+    }
+    .view-content{
+        h4{
+            a{
+                color: $nordicom-red;
+                text-transform: none;
+                font-weight: 700;
+            }
+        }
+    }
+    .block-publikation-kapitel-block .view-content {
+        font: 400 13px 'Source Sans Pro',sans-serif;
+    }
+    .block-publikation-kapitel-block .views-row{
+        margin-bottom: 14px;
+    }
+    tbody tr{
+        border: none;
+        background: none;
+    }
 }
-.context-publikationer .ds-2col > .group-right{
-    width: 30% !important;
-    padding: 12px 0 12px 12px;
-    background: url('img/dashed-ver.jpg') repeat-y ;
-    font-size: 13px;
-}
-.context-publikationer .ds-2col > .group-right img{
-    border: 1px solid #dfdfdf;
-}
-.context-publikationer .field-name-field-bild-1 a:hover{
-    border: 0;
-}
-.context-publikationer .view-mode-full h1{
-    margin-bottom: 5px !important;
-}
-.context-publikationer .view-mode-full .field-name-field-undertitel-1{
-    margin-bottom: 20px;
-}
-.context-publikationer .ds-2col > .group-right .field{
-    margin-bottom: 3px;
-    margin-top: 0;
-}
+//.context-publikationer  .ds-2col > .group-left{
+//    width: 65% !important;
+//    padding-right: 8px;
+//}
+//.context-publikationer .ds-2col > .group-right{
+//    width: 30% !important;
+//    padding: 12px 0 12px 12px;
+//    background: url('img/dashed-ver.jpg') repeat-y ;
+//    font-size: 13px;
+//}
+//.context-publikationer .ds-2col > .group-right img{
+//    border: 1px solid #dfdfdf;
+//}
+//.context-publikationer .field-name-field-bild-1 a:hover{
+//    border: 0;
+//}
+//.context-publikationer .view-mode-full h1{
+//    margin-bottom: 5px !important;
+//}
+//.context-publikationer .view-mode-full .field-name-field-undertitel-1{
+//    margin-bottom: 20px;
+//}
+//.context-publikationer .ds-2col > .group-right .field{
+//    margin-bottom: 3px;
+//    margin-top: 0;
+//}
 
-.context-publikationer .view-content h4 a,
+//.context-publikationer .view-content h4 a,
 .context-tidskrifter .view-content h4 a{
     color: #c0262c;
     text-transform: none;
     font-weight: 700;
 }
-.context-publikationer .block-publikation-kapitel-block .view-content {
-    font: 400 13px 'Source Sans Pro',sans-serif;
-}
-.context-publikationer .block-publikation-kapitel-block .views-row{
-    margin-bottom: 14px;
-}
+//.context-publikationer .block-publikation-kapitel-block .view-content {
+//    font: 400 13px 'Source Sans Pro',sans-serif;
+//}
+//.context-publikationer .block-publikation-kapitel-block .views-row{
+//    margin-bottom: 14px;
+//}
 
-.context-publikationer tbody,
-.context-publikationer tr{
-    border: none;
-    background: none;
-}
+//.context-publikationer tbody,
+//.context-publikationer tr{
+//    border: none;
+//    background: none;
+//}
 /*Tidskrifter kapitel 
 ==============================*/
 
