@@ -1,0 +1,30 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+ #page{
+ 	width: 960px;
+	 margin: 0 auto;
+	 box-shadow: 0 2px 10px #aaa;
+ }
+ .container-12{
+ 	/*background: url(img/bakgrund.jpg) repeat-y;*/
+ }
+ .container-16{
+/* 	box-shadow: 0 -10px 10px #aaa;*/
+/* 	width: 200px !important;*/
+ }
+ .grid-16{
+ 	margin-right: 0 !important;
+	 margin-left: 0 !important;
+	 width: 960px !important;
+ }
+ .grid-4{
+ 	width: 200px !important;
+ }
+ .container-24 .grid-4 {
+     width: 135px !important;
+ }
+ 
+ /*#region-sidebar-second .container-16 .grid-4{
+ 	width: 200px !important;
+ }*/
