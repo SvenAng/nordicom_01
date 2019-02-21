@@ -2306,6 +2306,30 @@ label:before {
     clear: both;
 }
 
+//Nytt för vising av förhandstitt på kapitel 21/2 2019
+.context-publikationer #region-content{
+    .views-row{
+        margin-bottom: 1.3em;
+    }
+    .nc-kapitel, .node-publikation-monografi-kapitel{
+        h4{
+            color: $nordicom-black;
+            line-height: 19px;
+        }
+        .field-name-field-author-2, .field-name-field-author-1{
+            margin-bottom: 4px;
+            .field-item{
+                display: inline-block;
+                padding-right: 4px;
+                color: $nordicom-blue;
+                font-size: 13px;
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
 /*Commerce stuff 
 ==================================================================*/
 
